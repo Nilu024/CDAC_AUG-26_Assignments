@@ -1,0 +1,24 @@
+public class InterfaceOperationsMain {
+
+	public static void main(String[] args) {
+		
+		RegularPolygon[] polygon = {
+				new EquilateralTriangle(5),
+				new Square(10),
+				new EquilateralTriangle(7)
+		};
+		
+		System.out.println("Total Sides: " + RegularPolygon.totalSides(polygon));
+		
+		for (RegularPolygon p: polygon) {
+			System.out.println();
+			System.out.println("Sides: " + p.getNumSides());
+			System.out.println("Sides Length: " + p.getSideLength());
+			System.out.println("Perimeter: " + p.getPerimeter());
+			System.out.println("Interior Angle: " + p.getInteriorAngle());
+		}
+		
+		
+	}
+
+}
